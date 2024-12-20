@@ -1,0 +1,20 @@
+l=[25,665,-11,5,4,8,6]
+l.sort()
+n=int(input("Enter the element to be searched: "))
+def binsearch():
+    left=0
+    right=len(l)-1
+    while (left<=right):
+        m=(left+right)//2
+        if l[m]==n:
+            return m
+        elif l[m]<n:
+            left=m+1
+        else:
+            right=m-1
+    return -1
+result=binsearch()
+if result!=-1:
+    print("The position of the number is ",result)
+else:
+    print("No element found") 
