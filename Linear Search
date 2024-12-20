@@ -1,0 +1,10 @@
+
+l=[3,6,8,5,9,11]
+n=int(input("Enter the element :"))
+def linearsearch():
+    for i in range(len(l)):
+        if l[i]==n:
+            print("The posistion of the n is: ",i+1)
+            return
+    print("not found in the list")
+linearsearch()
