@@ -1,0 +1,29 @@
+stack=[]
+def push():
+    global stack
+    stack=[]
+    n=int(input("Enter the size of stack:"))
+    for i in range(n):
+        e=int(input("Push the element into the stack:"))
+        stack.append(e)
+        print(stack)
+def pop():
+    global stack
+    if stack==[]:
+          print("Stack is empty")
+    else:
+	print("The popped element is:",stack.pop())
+        print(stack)
+while True:
+    print("------STACK OPERATION-------")
+    print("1.Push\t2.Pop\t3.Exit")
+    a=int(input("Enter the your choice:"))
+    if a==1:
+        push()
+    elif a==2:
+        pop()
+    elif a==3:
+        print("\tExit\t")
+        break
+    else:
+        print("Please enter valid option")
