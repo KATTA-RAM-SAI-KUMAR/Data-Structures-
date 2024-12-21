@@ -1,0 +1,29 @@
+queue=[]
+def enqueue():
+    global queue
+    queue=[]
+    n=int(input("Enter the size of queue:"))
+    for i in range(n):
+        e=int(input("enter the element into the queue:"))
+        queue.append(e)
+        print(queue)
+def dequeue():
+    global queue
+    if queue==[]:
+        print("queue is empty")
+    else:
+        print("The removed element is:",queue.pop(0))
+        print(queue)
+while True:
+    print("------QUEUE OPERATION-------")
+    print("1.Enqueue\t2.Dequeue\t3.Exit")
+    a=int(input("Enter the your choice:"))
+    if a==1:
+        enqueue()
+    elif a==2:
+        dequeue()
+    elif a==3:
+        print("\tExit\t")
+        break
+    else:
+        print("\t-Please enter valid option-\t")
